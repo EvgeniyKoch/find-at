@@ -1,0 +1,4 @@
+File "index.js" was here: "src/search-methods"
+File "searchAllFilesOfAllDirectories.js" was here: "src/search-methods"
+File "searchAllFilesOfDirectory.js" was here: "src/search-methods"
+File "searchFileOfDirectory.js" was here: "src/search-methods"
