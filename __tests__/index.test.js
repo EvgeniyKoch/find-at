@@ -24,9 +24,15 @@ describe('search:', () => {
     expect(search('src', 'search-methods/**/index.js')).toBe(result);
   });
 
-  test('should find the index.js file in all directories at the specified path and print', () => {
-    const result = 'File "index.js" was here: "src/search-methods"\n';
+  test('should all files and directories when not file template', () => {
+    const result = getExpectedResult('expectedValueWhenNotFileTemplate.txt');
 
-    expect(search('src', 'search-methods/**/index.js')).toBe(result);
+    expect(search('node_modules', '@babel/cli')).toBe(result);
+  });
+
+  test('should all files and directories when not file template', () => {
+    const result = getExpectedResult('expectedValueAllFilesOfDirectory.txt');
+
+    expect(search('node_modules', '@babel/cli/bin/*.js')).toBe(result);
   });
 });

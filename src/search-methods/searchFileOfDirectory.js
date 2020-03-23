@@ -1,13 +1,22 @@
 import fs from 'fs';
-import { filterByFileType, filterByFile } from '../utils';
+import path from 'path';
 
 export default (pathToDirSearch, ext, filename) => {
-  const contents = fs.readdirSync(pathToDirSearch);
-  return contents.map((curr) => {
-    const file = filterByFileType(curr, ext)
-      |> ((_) => filterByFile(_, filename));
+  const iter = (pathTo) => {
+    const contents = fs.readdirSync(pathTo);
+    return contents.map((curr) => {
+      const isDirectory = fs.statSync(path.join(pathTo, curr)).isDirectory();
+      if (isDirectory && curr !== filename) {
+        return iter(path.join(pathTo, curr));
+      }
 
-    return file && { file, pathToDirSearch };
-  })
-    .filter(Boolean);
+      if (curr === filename) {
+        return { file: curr, pathToDirSearch: pathTo };
+      }
+
+      return null;
+    });
+  };
+
+  return iter(pathToDirSearch).flat(Infinity).filter(Boolean);
 };

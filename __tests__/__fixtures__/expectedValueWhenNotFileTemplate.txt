@@ -1,0 +1,7 @@
+File "LICENSE" was here: "node_modules/@babel/cli"
+File "README.md" was here: "node_modules/@babel/cli"
+File "bin" was here: "node_modules/@babel/cli"
+File "index.js" was here: "node_modules/@babel/cli"
+File "lib" was here: "node_modules/@babel/cli"
+File "node_modules" was here: "node_modules/@babel/cli"
+File "package.json" was here: "node_modules/@babel/cli"
