@@ -19,17 +19,17 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/EvgeniyKoch/find-at.git"
   },
   "author": "Evgeniy Kochetov",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/EvgeniyKoch/find-at/issue"
   },
   "jest": {
     "testEnvironment": "node"
   },
-  "homepage": "",
+  "homepage": "https://github.com/EvgeniyKoch/find-at#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
