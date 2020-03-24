@@ -1,5 +1,7 @@
 # Program CLI for searching files by pattern
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/ff696f21ad18e717bad1/maintainability)](https://codeclimate.com/github/EvgeniyKoch/find-at/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/ff696f21ad18e717bad1/test_coverage)](https://codeclimate.com/github/EvgeniyKoch/find-at/test_coverage)
+
 ## Description
 Within the framework of this project, a utility has been implemented to search for a file (s) in a specified directory.
 
