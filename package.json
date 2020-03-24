@@ -1,7 +1,7 @@
 {
   "name": "find-at",
-  "version": "1.2.0",
-  "description": "",
+  "version": "1.2.2",
+  "description": "cli, search files",
   "main": "dist/index.js",
   "bin": {
     "search": "dist/bin/search.js"
@@ -39,7 +39,7 @@
     "babel-eslint": "^10.0.3",
     "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jest": "^23.8.2",
@@ -47,6 +47,7 @@
     "jest-cli": "^25.1.0"
   },
   "dependencies": {
-    "commander": "^5.0.0"
+    "commander": "^5.0.0",
+    "source-map-support": "^0.5.16"
   }
 }

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default (pathToDirSearch, ext, filename) => {
+export default ({ pathToDirSearch, base: filename }) => {
   const iter = (pathTo) => {
     const contents = fs.readdirSync(pathTo);
     return contents.map((curr) => {

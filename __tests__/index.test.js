@@ -30,7 +30,7 @@ describe('search:', () => {
     expect(search('node_modules', '@babel/cli')).toBe(result);
   });
 
-  test('should all files and directories when not file template', () => {
+  test('should find all scripts in the specified directory', () => {
     const result = getExpectedResult('expectedValueAllFilesOfDirectory.txt');
 
     expect(search('node_modules', '@babel/cli/bin/*.js')).toBe(result);
