@@ -19,7 +19,7 @@ Within the framework of this project, a utility has been implemented to search f
 - Report generation in the form of plain text
 
 ### Instruction:
-The utility takes three parameters \<dir> \<pattern> [ignore]
+The utility takes three arguments \<dir> \<pattern> [ignore]
 
 - \<dir> - Required arguments. The path to the directory in which the search is performed.
 - \<pattern> - Required arguments. The template to be searched for, for example: ```src/**/*.ts```
